@@ -1,1 +1,312 @@
-
+[
+ [
+  "page index.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page boutique.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page metiers.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page offres.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page a-propos.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page suivi.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page compte.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page contact.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page confidentialite.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page conditions.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page livraison.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page admin.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "page 404.html renders (no JS error, has heading)",
+  true,
+  ""
+ ],
+ [
+  "admin.html shows no dashboard to a visitor",
+  true,
+  "IMAGIE\nCRÉATION\n🇫🇷 Français\n🇭🇹 Kreyòl\n🇬🇧 English\n🇪🇸 Español\n🇧🇷 Português\n🇩🇪 Deutsch\n🇮🇹 Italiano\n🇸🇦 العربية\n🇨🇳 中文\n♙\n🛒0\n☰\n"
+ ],
+ [
+  "admin.html has noindex meta",
+  true,
+  ""
+ ],
+ [
+  "nav link Boutique exists",
+  true,
+  ""
+ ],
+ [
+  "nav link Nos métiers exists",
+  true,
+  ""
+ ],
+ [
+  "nav link Offres exists",
+  true,
+  ""
+ ],
+ [
+  "nav link À propos exists",
+  true,
+  ""
+ ],
+ [
+  "nav link Suivre ma commande exists",
+  true,
+  ""
+ ],
+ [
+  "nav link Contact exists",
+  true,
+  ""
+ ],
+ [
+  "mobile menu: click opens independent page",
+  true,
+  "http://127.0.0.1:8791/boutique.html"
+ ],
+ [
+  "mobile drawer closed after navigation",
+  true,
+  ""
+ ],
+ [
+  "browser back returns to previous page",
+  true,
+  "http://127.0.0.1:8791/index.html"
+ ],
+ [
+  "shop lists the 48 catalogue families",
+  true,
+  "48"
+ ],
+ [
+  "shop search filters products",
+  true,
+  "7"
+ ],
+ [
+  "provisional/unconfirmed products cannot be added to cart (no enabled Add button)",
+  true,
+  ""
+ ],
+ [
+  "product detail opens an accessible dialog (role=dialog, aria-modal)",
+  true,
+  ""
+ ],
+ [
+  "no native alert() used",
+  true,
+  "[]"
+ ],
+ [
+  "dialog moves focus inside",
+  true,
+  ""
+ ],
+ [
+  "focus stays trapped in dialog",
+  true,
+  ""
+ ],
+ [
+  "Escape closes dialog and restores focus to trigger",
+  true,
+  ""
+ ],
+ [
+  "install button hidden until the browser offers installation",
+  true,
+  ""
+ ],
+ [
+  "install button shown after beforeinstallprompt",
+  true,
+  ""
+ ],
+ [
+  "install click calls prompt() and hides the button",
+  true,
+  ""
+ ],
+ [
+  "manifest icons load as PNG (192/512 + maskable)",
+  true,
+  ""
+ ],
+ [
+  "apple-touch-icon present",
+  true,
+  ""
+ ],
+ [
+  "language pt: html[lang] updated",
+  true,
+  "pt"
+ ],
+ [
+  "language de: html[lang] updated",
+  true,
+  "de"
+ ],
+ [
+  "language it: html[lang] updated",
+  true,
+  "it"
+ ],
+ [
+  "language zh: html[lang] updated",
+  true,
+  "zh"
+ ],
+ [
+  "language ht: html[lang] updated",
+  true,
+  "ht"
+ ],
+ [
+  "language en: html[lang] updated",
+  true,
+  "en"
+ ],
+ [
+  "language es: html[lang] updated",
+  true,
+  "es"
+ ],
+ [
+  "language fr: html[lang] updated",
+  true,
+  "fr"
+ ],
+ [
+  "Arabic: layout is RTL",
+  true,
+  "rtl"
+ ],
+ [
+  "Arabic: dialog text localised",
+  true,
+  ""
+ ],
+ [
+  "Kreyòl: product card shows name_ht",
+  true,
+  "Tumbler 40 oz ak manch ak payèt"
+ ],
+ [
+  "no horizontal overflow at 360px",
+  true,
+  ""
+ ],
+ [
+  "no horizontal overflow at 390px",
+  true,
+  ""
+ ],
+ [
+  "no horizontal overflow at 768px",
+  true,
+  ""
+ ],
+ [
+  "no horizontal overflow at 1024px",
+  true,
+  ""
+ ],
+ [
+  "no horizontal overflow at 1440px",
+  true,
+  ""
+ ],
+ [
+  "reduced-motion: hero slider starts paused",
+  true,
+  ""
+ ],
+ [
+  "slider auto-advances",
+  true,
+  ""
+ ],
+ [
+  "slider pause button stops auto-advance",
+  true,
+  ""
+ ],
+ [
+  "enforced CSP: no violations on public pages + product dialog",
+  true,
+  ""
+ ],
+ [
+  "compte: every form control has a label",
+  true,
+  ""
+ ],
+ [
+  "contact: every form control has a label",
+  true,
+  ""
+ ],
+ [
+  "suivi: every form control has a label",
+  true,
+  ""
+ ],
+ [
+  "metiers: every form control has a label",
+  true,
+  ""
+ ],
+ [
+  "all images have alt",
+  true,
+  "0"
+ ]
+]
