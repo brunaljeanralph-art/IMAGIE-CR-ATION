@@ -1,0 +1,70 @@
+[functions.verify-turnstile]
+# The function is public before OAuth sign-in, but accepts only approved browser origins
+# and validates every single-use Turnstile token with Cloudflare Siteverify.
+verify_jwt = false
+
+[functions.send-push]
+verify_jwt = true
+
+# IMAGIE CRÉATION — email OTP, custom branded templates, and security alerts.
+# For the hosted Supabase project, copy these settings/templates in the Dashboard too;
+# pushing this local config file alone does not change a hosted project's dashboard settings.
+[auth]
+site_url = "https://imagie-cr-ation.vercel.app"
+additional_redirect_urls = ["https://imagie-cr-ation.vercel.app/**"]
+
+[auth.email]
+enable_signup = true
+enable_confirmations = true
+double_confirm_changes = true
+secure_password_change = true
+max_frequency = "60s"
+otp_length = 6
+otp_expiry = 300
+
+[auth.email.template.confirmation]
+subject = "Votre code de vérification — IMAGIE CRÉATION"
+content_path = "./supabase/templates/confirmation.html"
+
+[auth.email.template.email_change]
+subject = "Confirmez votre nouvelle adresse — IMAGIE CRÉATION"
+content_path = "./supabase/templates/email_change.html"
+
+[auth.email.template.recovery]
+subject = "Réinitialisation du mot de passe — IMAGIE CRÉATION"
+content_path = "./supabase/templates/recovery.html"
+
+[auth.email.notification.password_changed]
+enabled = true
+subject = "Alerte de sécurité — mot de passe modifié | IMAGIE CRÉATION"
+content_path = "./supabase/templates/password_changed_notification.html"
+
+[auth.email.notification.email_changed]
+enabled = true
+subject = "Alerte de sécurité — adresse e-mail modifiée | IMAGIE CRÉATION"
+content_path = "./supabase/templates/email_changed_notification.html"
+
+[auth.email.notification.phone_changed]
+enabled = true
+subject = "Alerte de sécurité — téléphone modifié | IMAGIE CRÉATION"
+content_path = "./supabase/templates/phone_changed_notification.html"
+
+[auth.email.notification.identity_linked]
+enabled = true
+subject = "Alerte de sécurité — connexion ajoutée | IMAGIE CRÉATION"
+content_path = "./supabase/templates/identity_linked_notification.html"
+
+[auth.email.notification.identity_unlinked]
+enabled = true
+subject = "Alerte de sécurité — connexion retirée | IMAGIE CRÉATION"
+content_path = "./supabase/templates/identity_unlinked_notification.html"
+
+[auth.email.notification.mfa_factor_enrolled]
+enabled = true
+subject = "Alerte de sécurité — protection ajoutée | IMAGIE CRÉATION"
+content_path = "./supabase/templates/mfa_factor_enrolled_notification.html"
+
+[auth.email.notification.mfa_factor_unenrolled]
+enabled = true
+subject = "Alerte de sécurité — protection retirée | IMAGIE CRÉATION"
+content_path = "./supabase/templates/mfa_factor_unenrolled_notification.html"
