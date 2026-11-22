@@ -1,0 +1,6 @@
+{
+  "appId": "com.imagie.creation",
+  "appName": "Imagie Création",
+  "webDir": "dist",
+  "bundledWebRuntime": false
+}
