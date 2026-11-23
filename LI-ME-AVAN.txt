@@ -1,0 +1,14 @@
+IMAGIE CRÉATION v7 — BOUTIQUE
+
+Cette archive contient le projet complet, pas un patch partiel.
+
+1. Décompressez l'archive.
+2. Ouvrez le dossier IMAGIE_CREATION_V7_BOUTIQUE.
+3. Envoyez TOUT son contenu à la racine du dépôt GitHub brunaljeanralph-art/IMAGIE-CR-ATION, en conservant tous les sous-dossiers.
+4. Ne téléversez pas le fichier ZIP lui-même.
+5. Dans Vercel, Root Directory = site, Build Command = npm run build, Output Directory = dist.
+6. Appliquez le schéma, le seed et les migrations 002, 003 puis 004 dans Supabase.
+7. Déployez les fonctions Supabase nécessaires selon README_GITHUB.md et site/START-HERE.md.
+
+Ne publiez jamais .env.local, la clé service_role, les secrets Turnstile ou la clé VAPID privée.
+Consultez docs/TEST_REPORT_V7.md : les tests statiques et unitaires ont réussi, mais le build, le SQL réel et le déploiement externe restent à confirmer.

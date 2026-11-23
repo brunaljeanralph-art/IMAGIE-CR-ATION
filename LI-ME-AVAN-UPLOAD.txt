@@ -1,0 +1,12 @@
+IMAGIE CRÉATION v7 — INSTRUCTIONS D'UPLOAD
+
+Le ZIP est une archive complète du projet. Dézippez-la avant l'upload GitHub.
+
+- Gardez les chemins (site/, supabase/, src/, docs/, tests/, assets/, etc.).
+- Placez tout le contenu de IMAGIE_CREATION_V7_BOUTIQUE à la racine du dépôt, et non dans un sous-dossier supplémentaire.
+- Ne créez pas de .env.local et n'ajoutez aucune clé secrète.
+- Vercel conseillé : Root Directory = site ; Build = npm run build ; Output = dist.
+- Supabase : appliquer schema.sql, seed_catalog.sql, migrations 002, 003 et 004 dans cet ordre.
+- Déployer verify-turnstile, send-push et send-order-update selon les besoins et la documentation.
+
+Important : le rapport docs/TEST_REPORT_V7.md distingue ce qui a été testé de ce qui dépend encore des accès Vercel/Supabase du propriétaire.
