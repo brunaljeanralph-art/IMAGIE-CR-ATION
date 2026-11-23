@@ -1,6 +1,6 @@
 // Imagie Création service worker. Network-first for pages, stale-while-revalidate for static files.
 // Push messages are shown only after the visitor explicitly grants browser notification permission.
-const CACHE = 'imagie-shell-v4';
+const CACHE = 'imagie-shell-v5';
 const PRECACHE = ['/', '/index.html', '/manifest.webmanifest', '/assets/imagie-logo-original.jpg', '/assets/icon-192.png', '/assets/icon-512.png'];
 self.addEventListener('install', (event) => {
   event.waitUntil(caches.open(CACHE).then((cache) => Promise.allSettled(PRECACHE.map((u) => cache.add(u)))).then(() => self.skipWaiting()));
