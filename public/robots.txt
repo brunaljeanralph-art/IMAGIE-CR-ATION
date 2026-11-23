@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+Disallow: /admin.html
+Disallow: /compte.html
+Disallow: /suivi.html
+Disallow: /connexion.html
+Disallow: /inscription.html
+Disallow: /mot-de-passe-oublie.html
+Disallow: /completer-profil.html
